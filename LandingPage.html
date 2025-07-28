@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smartwatch Landing Page</title>
+
+  <!--Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563eb', // Custom primary blue
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800"></body>
+
+<!-- Header -->
+<header id="topbar" class="bg-white border-b border-gray-200 shadow-sm" role="banner">
+  <div class="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <div id="brand-label" class="text-xl font-extrabold text-blue-700 tracking-tight">
+      WatchFit
+    </div>
+
+    <!-- Navigation -->
+    <nav id="nav-links" class="hidden lg:flex gap-6 text-sm text-gray-700">
+      <a href="#home" class="hover:text-blue-600 transition-colors duration-150">Home</a>
+      <a href="#features" class="hover:text-blue-600 transition-colors duration-150">Features</a>
+      <a href="#reviews" class="hover:text-blue-600 transition-colors duration-150">Reviews</a>
+      <a href="#contact" class="hover:text-blue-600 transition-colors duration-150">Contact</a>
+    </nav>
+
+    <!-- User Controls -->
+    <div id="account-controls" class="flex items-center gap-4">
+
+      <!-- Login -->
+      <a href="#login" class="text-sm text-gray-700 hover:text-blue-600 transition-colors duration-150">
+        Login
+      </a>
+
+      <!-- Sign Up -->
+      <a href="#signup" class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-sm">
+        Sign Up
+      </a>
+
+      <!-- Cart -->
+      <a href="#cart" class="relative text-gray-700 hover:text-blue-600 transition-colors duration-150">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 6h13l-1.5-6M7 13h10m-6 6a1 1 0 110 2 1 1 0 010-2zm6 0a1 1 0 110 2 1 1 0 010-2z" />
+        </svg>
+        <span class="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center">
+          7
+        </span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+<section aria-label="Hero Section" class="bg-white max-w-7xl mx-auto px-6 py-20 flex flex-col-reverse lg:flex-row items-center gap-12">
+
+  <!-- Text Area -->
+  <div class="w-full lg:w-1/2 text-center lg:text-left">
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+      Meet WatchFit — The Smarter Way to Stay Fit
+    </h1>
+
+    <p class="text-lg text-gray-600 mb-6 max-w-md mx-auto lg:mx-0">
+      All-in-one fitness companion with real-time tracking, waterproof build, and powerful battery life.
+    </p>
+
+    <ul class="text-gray-700 text-sm space-y-2 mb-6 max-w-sm mx-auto lg:mx-0">
+      <li class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+        Real-time health & activity tracking
+      </li>
+      <li class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+        Long battery life — up to 17 days
+      </li>
+      <li class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+        Water-resistant
+      </li>
+    </ul>
+
+    <!--  CTA -->
+    <div class="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4">
+      <a href="#buy-now" class="px-6 py-3 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition duration-200">
+        Shop Now
+      </a>
+      <a href="#features" class="px-6 py-3 border border-gray-300 text-sm rounded-lg text-gray-700 hover:border-gray-400 transition duration-200">
+        Learn More
+      </a>
+    </div>
+  </div>
+
+  <!-- Image -->
+  <div class="w-full lg:w-1/2 relative">
+  
+    <div class="absolute -z-10 top-0 left-1/2 -translate-x-1/2 w-80 h-80 bg-blue-100 rounded-full blur-3xl opacity-30"></div>
+    
+    <img
+      src="https://plus.unsplash.com/premium_photo-1712764121254-d9867c694b81?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c21hcnQlMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D
+      "
+      sizes="(max-width: 768px) 100vw, 600px"
+      alt="Smartwatch product image"
+      class="w-full h-auto max-w-md mx-auto rounded-lg shadow-xl"
+      loading="lazy"
+    />
+  </div>
+
+</section>
+
+    <!-- Features Section -->
+    <section aria-label="Features" class="max-w-7xl mx-auto px-6 py-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">
+        Why Choose Our Smartwatch?
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <!-- Feature 1 -->
+        <div class="flex items-start gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3" />
+          </svg>
+          <div>
+            <h3 class="text-xl font-semibold mb-1">Heart Rate Monitor</h3>
+            <p class="text-gray-600">Real-time heart health tracking while you move.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="flex items-start gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h1l2 8h12l2-8h1" />
+          </svg>
+          <div>
+            <h3 class="text-xl font-semibold mb-1">Sleep Monitor</h3>
+            <p class="text-gray-600">Track your sleep patterns and optimize your rest.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="flex items-start gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 12l4.243-4.243" />
+          </svg>
+          <div>
+            <h3 class="text-xl font-semibold mb-1">GPS Tracking</h3>
+            <p class="text-gray-600">Navigate your runs and rides with built-in GPS.</p>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="flex items-start gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c2.21 0 4-1.79 4-4S14.21 0 12 0s-4 1.79-4 4 1.79 4 4 4z" />
+          </svg>
+          <div>
+            <h3 class="text-xl font-semibold mb-1">Long Battery</h3>
+            <p class="text-gray-600">Enjoy up to 7 days of battery life on a single charge.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Testimonials Section -->
+    <section aria-label="Testimonials" class="bg-gray-50 py-16 px-6">
+      <div class="max-w-7xl mx-auto">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <img src="https://picsum.photos/id/1012/80" alt="Customer Emma J." class="w-20 h-20 mx-auto rounded-full mb-4" />
+            <h4 class="font-semibold text-lg">Abdul Kabir</h4>
+            <p class="text-sm text-gray-500 mb-2">Fitness Coach</p>
+            <p class="text-gray-600 mb-3">“The sleep tracking and heart rate monitor have helped me better understand my recovery.”</p>
+            <div class="flex justify-center text-yellow-400" aria-label="4 out of 5 stars">
+              ★★★★☆
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <img src="https://picsum.photos/id/1011/80" alt="Customer Liam K." class="w-20 h-20 mx-auto rounded-full mb-4" />
+            <h4 class="font-semibold text-lg">Ayesha khann</h4>
+            <p class="text-sm text-gray-500 mb-2">Runner</p>
+            <p class="text-gray-600 mb-3">“Built-in GPS is a game-changer for my trail runs. Battery lasts through the weekend.”</p>
+            <div class="flex justify-center text-yellow-400" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <img src="https://picsum.photos/id/1005/80" alt="Customer Sophia R." class="w-20 h-20 mx-auto rounded-full mb-4" />
+            <h4 class="font-semibold text-lg">Sohib S.</h4>
+            <p class="text-sm text-gray-500 mb-2">Tech Enthusiast</p>
+            <p class="text-gray-600 mb-3">“Sleek, smart, and stylish. Love the seamless phone sync and minimalist UI.”</p>
+            <div class="flex justify-center text-yellow-400" aria-label="4 out of 5 stars">
+              ★★★★☆
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Section -->
+    <section aria-label="Final call to action" class="bg-primary text-white py-16 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+
+        <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+          Ready to Take Charge of Your Fitness?
+        </h2>
+
+        <p class="text-lg sm:text-xl mb-8">
+          Join thousands of happy users who’ve made SmartFit a part of their daily routine.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+          <div class="bg-white text-gray-800 p-4 rounded-md shadow-sm">
+            <p class="mb-1 font-medium">“Absolutely love it!”</p>
+            <p class="text-sm text-gray-500">⭐⭐⭐⭐⭐ – Ash K.</p>
+          </div>
+          <div class="bg-white text-gray-800 p-4 rounded-md shadow-sm">
+            <p class="mb-1 font-medium">“Battery life is amazing.”</p>
+            <p class="text-sm text-gray-500">⭐⭐⭐⭐⭐ – Areeb S.</p>
+          </div>
+        </div>
+
+        <a href="#buy" class="inline-block bg-white text-primary font-semibold px-8 py-4 rounded-lg shadow-lg text-lg hover:bg-gray-200 transition">
+          Get Yours Now
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
+
