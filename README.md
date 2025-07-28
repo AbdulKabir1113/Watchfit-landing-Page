@@ -1,5 +1,3 @@
-# Watchfit-landing-Page
-
 # WatchFit – Smartwatch Landing Page
 
 This is a simple, responsive landing page for a fictional smartwatch brand called **WatchFit**. It’s built using HTML and Tailwind CSS.
